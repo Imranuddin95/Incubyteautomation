@@ -1,0 +1,11 @@
+Response res=RestAssured.given().contentType(ContentType.JSON).body().when().post("url");
+
+int statusCode=res.getStatusCode();
+System.out.println(statusCode);
+
+String body=res.getBody().asPrettyString();
+System.out.println(body);
+
+
+
+https://github.com/Imranuddin95/IncubyteProject.git
